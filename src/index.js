@@ -1,8 +1,8 @@
 
 import express from "express";
 import cors from "cors";
-import SendContactMail from "./MailContainer/sendmail.js"; // adjust path
-import Contact from "./models/contact.js";                // if using MongoDB
+import SendContactMail from "../MailContainer/sendmail.js"; // adjust path
+import Contact from "../models/contact.js";                // if using MongoDB
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
