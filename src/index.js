@@ -46,6 +46,20 @@ app.post("/contact", async (req, res) => {
     res.status(500).json({ success: false, error: err.message });
   }
 });
+app.get("/get" , async(req, res)=>{
+
+  try {
+    const messages = await Contact.find();
+    res.json({
+      message : "contaced Fetched",
+      messages,
+    })
+    
+  } catch (error) {
+    console.log(erro)
+  }
+
+})
 
 // ✅ Export handler for Vercel
 export default app;
