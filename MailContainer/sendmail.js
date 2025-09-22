@@ -85,7 +85,7 @@ const SendContactMail = async ({ name, email, phone, message }) => {
      // 2️⃣ Confirmation mail to user
     
 const userMailOptions = {
-  from: `"Your Website" <${process.env.EMAIL_USER}>`,
+  from: `"Shamshad's PortFolio" <${process.env.EMAIL_USER}>`,
   to: email,
   subject: "✨ Thank You for Contacting Us – We’ve Received Your Message!",
   html: `
@@ -117,7 +117,7 @@ const userMailOptions = {
           </p>
 
           <div style="margin: 30px 0 10px;" align="center">
-            <a href="https://yourwebsite.com" style="background: #4f46e5; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-size: 15px; font-weight: 600; display: inline-block;">Visit Our Website</a>
+            <a href="https://shamshadport.netlify.app" style="background: #4f46e5; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-size: 15px; font-weight: 600; display: inline-block;">Visit Our Website</a>
           </div>
         </td>
       </tr>
@@ -125,8 +125,8 @@ const userMailOptions = {
       <!-- Footer -->
       <tr>
         <td bgcolor="#f9fafb" style="padding: 20px 25px; text-align: center; font-size: 13px; color: #6b7280;">
-          <p style="margin: 0;">© ${new Date().getFullYear()} Your Website. All rights reserved.</p>
-          <p style="margin: 4px 0 0;">1234 Business St, City, Country</p>
+          <p style="margin: 0;">© ${new Date().getFullYear()} Shamshad's Portfolio. All rights reserved.</p>
+          <p style="margin: 4px 0 0;">226028 Business St, Lucknow, India</p>
         </td>
       </tr>
     </table>
